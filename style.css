@@ -56,6 +56,7 @@ a:hover{
     background-color: black;
     border-radius: 50px;
     padding: 50px;
+    box-shadow: 5px 2px 4px red;
 
  
     
@@ -75,6 +76,7 @@ a:hover{
     background-color: black;
     border-radius: 50px;
     padding: 50px;
+    box-shadow: 5px 2px 4px red;
  
     
 }
@@ -83,6 +85,7 @@ a:hover{
     background-color: black;
     border-radius: 50px;
     padding: 50px;
+    box-shadow: 5px 2px 4px red;
  
     
 }
@@ -98,6 +101,7 @@ a:hover{
         overflow-y: auto; 
         overflow-x: hidden;
          scroll-behavior: smooth;
+         
    
 
 }
@@ -110,6 +114,7 @@ a:hover{
     align-items: center;
     row-gap: 40px;
     padding-left: 20px;
+    box-shadow: 5px 2px 4px red;
    
     
 

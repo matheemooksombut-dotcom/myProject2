@@ -85,8 +85,10 @@ a:hover{
     grid-column: 1/4;
     background-color: black;
     height: 500px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius:50px ;
+    width: 500px;
+    /* border-bottom-left-radius: 50px;
+    border-top-left-radius:50px ; */
+    border-radius: 50px;
     padding: 10px;
  
     
@@ -141,6 +143,7 @@ a:hover{
         overflow-x: hidden;
          scroll-behavior: smooth;
          
+         
    
 
 }
@@ -154,13 +157,15 @@ a:hover{
     row-gap: 40px;
     padding-left: 20px;
      box-shadow: 5px 2px 4px rgb(255, 169, 169);
+     overflow: hidden;
+     height: 400px;
    
     
 
 }
 
 .content-3 img{
-      width: 100%;
+width: 100%;
   height: 100%;
   object-fit: cover; /* ครอบเต็มช่อง แต่ไม่ล้น */
   border-radius: 50px;
@@ -199,22 +204,28 @@ a:hover{
 /* ตัว container ที่อยากตกแต่ง เช่น .content-1 */
 .content-1::-webkit-scrollbar {
   height: 10px;        /* ความหนาแนวนอน */
-  width: 10px;         /* ความหนาแนวตั้ง */
+  width: 70px;         /* ความหนาแนวตั้ง */
+  
 }
 
 .content-1::-webkit-scrollbar-track {
   background: #222;     /* พื้นหลังรางเลื่อน */
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .content-1::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
-  border-radius: 10px;  /* ทำให้กลม */
+  border-radius: 50px;  /* ทำให้กลม */
 }
 
 .content-1::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 3, 3));
 }
+
+
+
+
+
 
 
 .bookinghotel-1:hover img {

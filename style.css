@@ -268,3 +268,9 @@ width: 100%;
 .bookinghotel-8:hover img {
     box-shadow: 2px 6px 6px red;
 }
+
+
+.logo1, .logo2, .logo3 {
+  display: inline-block;
+  margin-right: 20px; /* ระยะห่างระหว่างโลโก้ */
+}

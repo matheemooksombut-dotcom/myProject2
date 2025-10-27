@@ -203,10 +203,15 @@ width: 100%;
 /* ? scorbardesigned */
 /* ตัว container ที่อยากตกแต่ง เช่น .content-1 */
 .content-1::-webkit-scrollbar {
+    
   height: 10px;        /* ความหนาแนวนอน */
-  width: 70px;         /* ความหนาแนวตั้ง */
+  width: 70px; 
+  
+          /* ความหนาแนวตั้ง */
   
 }
+
+
 
 .content-1::-webkit-scrollbar-track {
   background: #222;     /* พื้นหลังรางเลื่อน */

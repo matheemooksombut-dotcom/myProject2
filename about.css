@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech&display=swap');
+body{
+     padding-top: 80px; 
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 50px;
+    background-color: black;
+    color: aliceblue;
+    justify-content: space-around;
+    padding: 20px;
+    /* border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+   
+
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    box-shadow: 5px 2px 4px rgb(32, 32, 32);
+     z-index: 1000; 
+    
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    font-size: large;
+    color: red;
+}

@@ -39,6 +39,17 @@ ul{
 }
 
 
+.menu a:hover {
+  color: red;
+}
+
+
+.navbar a:hover {
+  color: red ;
+}
+
+
+
 
 
 

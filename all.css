@@ -54,6 +54,49 @@ a:hover{
 
 
 
+
+.menubar{
+    display: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    
+}
+
+
+.menubar{
+  display: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: -60px;
+  margin-left: 50px;
+}
+
+
+.menu {
+  overflow: hidden;
+  max-height: 0;           /* ซ่อนไว้ก่อน */
+
+  
+ 
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  
+}
+
+
 /* !responsive design */
 @media screen and (max-width: 992px) {
   .menubar {

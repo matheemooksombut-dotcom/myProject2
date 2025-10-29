@@ -5,9 +5,10 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.navbar{
+.navbar ul{
     display: flex;
     position: fixed;
+    flex-direction: row;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,39 +29,23 @@ body{
     box-shadow: 5px 2px 4px rgb(32, 32, 32);
      z-index: 1000; 
     
+    
 
 }
 
-.menubar{
-    display: none;
+ul{
+    list-style: none;
+    margin: 0;
+    
 }
 
 
-.navbar-1{
-    margin: 10px;
-}
 
-.navbar-2{
-    margin: 10px;
-}
-
-
-.navbar-3{
-    margin: 10px;
-}
-
-.navbar-4{
-    margin: 10px;
-}
-
-.navbar-5{
-    margin: 10px;
-}
 
 
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 a:hover{
@@ -303,9 +288,6 @@ width: 100%;
 
 .room:hover img{ 
      box-shadow: 2px 6px 6px red;
-}
-.menubar{
-    display: none;
 }
 
 

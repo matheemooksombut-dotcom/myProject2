@@ -205,8 +205,9 @@ a:hover{
 }
 
 .content-3 img{
-width: 100%;
+  width: 100%;
   height: 100%;
+  
   object-fit: cover; /* ครอบเต็มช่อง แต่ไม่ล้น */
   border-radius: 50px;
   box-shadow: 2px 6px 6px whitesmoke;
@@ -332,6 +333,7 @@ width: 100%;
 
 
 /* !responsive design */
+/* ?Taplet */
 @media screen and (max-width: 992px) {
   .menubar {
     display: block; /* โชว์ hamburger */
@@ -346,7 +348,7 @@ width: 100%;
     .menu.active {
         max-height: 300px;   /* ความสูงของเมนูที่เปิด */
             /* ขยับลงมานิดนึง */
-        
+          
     }
 
   .menu ul {
@@ -355,11 +357,172 @@ width: 100%;
   
     
   }
+  .content-1{
 
+    grid-column: 1/6;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 500px;
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius:50px ;
+    /* border-radius: 50px; */
+    padding: 10px;
+     animation: faded;
+    animation-duration: 3s;
+
+    margin-top: 100px;
+    z-index: 1;
+   
+ 
+    
+}
+
+.content-2{
+   grid-column: 1/6;
+}
+
+.content-3{
+   grid-column: 1/6;
+  
+  height: 600px;
+}
+
+.content-3{
+ display: flex;
+ flex-direction: column;
+ 
+
+}
+.content-5{
+  grid-column: 1/6;
+}
 
  
  
 }
+
+
+
+
+/* ?  Laptop  */
+
+@media screen and (max-width: 1024px) {
+
+  .content-1{
+
+    grid-column: 1/6;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 500px;
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius:50px ;
+    /* border-radius: 50px; */
+    padding: 10px;
+     animation: faded;
+    animation-duration: 3s;
+
+    margin-top: 100px;
+    z-index: 1;
+   
+ 
+    
+}
+
+.content-2{
+   grid-column: 1/6;
+}
+
+.content-3{
+   grid-column: 1/6;
+  
+  height: 600px;
+}
+
+.content-3{
+ display: flex;
+ flex-direction: column;
+ 
+
+}
+.content-5{
+  grid-column: 1/6;
+}
+
+ 
+ 
+}
+
+
+
+
+
+/* ? Laptop -  L */
+@media screen and (max-width: 1440px) {
+
+  .content-1{
+
+    grid-column: 1/6;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 500px;
+
+    border-bottom-left-radius: 50px;
+    border-top-left-radius:50px ;
+    /* border-radius: 50px; */
+    padding: 10px;
+     animation: faded;
+    animation-duration: 3s;
+
+    margin-top: 100px;
+    z-index: 1;
+   
+ 
+    
+}
+
+.content-2{
+   grid-column: 1/6;
+}
+
+.content-3{
+   grid-column: 1/6;
+  
+  height: 600px;
+}
+
+.content-3{
+ display: flex;
+ flex-direction: column;
+ 
+
+}
+.content-5{
+  grid-column: 1/6;
+}
+
+ 
+ 
+}
+
+
+@media screen and (max-width: 1701px) {
+  .content-5 > .logo{
+    
+      display: flex;
+    
+   
+   
+    
+ 
+  }
+  
+}
+
+
+
+
 
 
 

@@ -53,7 +53,7 @@ ul{
 
 .menu {
   overflow: hidden;
-  max-height: 0;           /* ซ่อนไว้ก่อน */
+  height: 0;        /* ซ่อนไว้ก่อน */
 
   
  
@@ -341,12 +341,13 @@ a:hover{
 
   .menu {
     display: none; /* ซ่อนเมนูตอนแรก */
+    max-height: auto; 
     
   }
 
   /* เมื่อ active แล้วจะโชว์เมนูแบบ column */
     .menu.active {
-        max-height: 300px;   /* ความสูงของเมนูที่เปิด */
+        max-height: auto;   /* ความสูงของเมนูที่เปิด */
             /* ขยับลงมานิดนึง */
           
     }
@@ -371,7 +372,7 @@ a:hover{
      animation: faded;
     animation-duration: 3s;
 
-    margin-top: 100px;
+    margin-top: 0px;
     z-index: 1;
    
  
@@ -423,7 +424,7 @@ a:hover{
      animation: faded;
     animation-duration: 3s;
 
-    margin-top: 100px;
+    margin-top: 0px;
     z-index: 1;
    
  
@@ -475,7 +476,7 @@ a:hover{
      animation: faded;
     animation-duration: 3s;
 
-    margin-top: 100px;
+    margin-top: 0px;
     z-index: 1;
    
  
@@ -511,10 +512,7 @@ a:hover{
   .content-5 > .logo{
     
       display: flex;
-    
-   
-   
-    
+
  
   }
   

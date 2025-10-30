@@ -1,47 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech&display=swap');
-body{
-     padding-top: 80px; 
-    max-width: 100%;
-    background-color: rgb(255, 255, 255);
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech&display=swap");
+body {
+  padding-top: 80px;
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
-.navbar ul{
-    display: flex;
-    position: fixed;
-    flex-direction: row;
-    top: 0;
-    left: 0;
-    width: 100%;
-   
-    gap: 50px;
-    background-color: black;
-    color: aliceblue;
-    justify-content: space-around;
-    padding: 20px;
-    /* border-bottom-right-radius: 20px;
+.navbar ul {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  gap: 50px;
+  background-color: black;
+  color: aliceblue;
+  justify-content: space-around;
+  padding: 20px;
+  /* border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px; */
-   
 
-    font-family: "SUSE Mono", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 10px;
-    font-style: normal;
-    box-shadow: 5px 2px 4px rgb(32, 32, 32);
-     z-index: 1; 
-    
-    
-
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  box-shadow: 5px 2px 4px rgb(32, 32, 32);
+  z-index: 100;
 }
 
-
-ul{
-    list-style: none;
-    margin: 0;
-    
+ul {
+  list-style: none;
+  margin: 0;
 }
 
-
-.menubar{
+.menubar {
   display: none;
   cursor: pointer;
   font-size: 22px;
@@ -50,190 +43,144 @@ ul{
   margin-left: 50px;
 }
 
-
 .menu {
   overflow: hidden;
-  height: 0;        /* ซ่อนไว้ก่อน */
-
-  
- 
+  height: 0; /* ซ่อนไว้ก่อน */
 }
 .menu ul {
   list-style: none;
   display: flex;
   gap: 20px;
   padding: 30px;
-  
 }
 .menu a {
   color: white;
   text-decoration: none;
   padding: 10px 0;
-  
 }
 
-
-
-
-
-
-
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-a:hover{
-    font-size: large;
-    color: red;
+a:hover {
+  font-size: large;
+  color: red;
 }
 
-
-.content{
-
-   
-    margin: 60px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    row-gap: 60px;
-    color: rgb(255, 255, 255);
-    gap: 50px;
-    font-family: "SUSE Mono", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 10px;
-    font-style: normal;
+.content {
+  margin: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 60px;
+  color: rgb(255, 255, 255);
+  gap: 50px;
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
 }
 
+.content-1 {
+  grid-column: 1/4;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 500px;
+  width: 500px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  padding: 10px;
+  animation: faded;
+  animation-duration: 3s;
+  margin-top: 0px;
 
-.content-1{
-
-    grid-column: 1/4;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    height: 500px;
-    width: 500px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius:50px ;
-    /* border-radius: 50px; */
-    padding: 10px;
-     animation: faded;
-    animation-duration: 3s;
-    margin-top: 0px;
-    z-index: 2;
-   
- 
-    
-}.content-2{
-
-    background-color: black;
-    border-radius: 50px;
-    padding: 50px;
-    box-shadow: 5px 2px 4px rgb(32, 32, 32);
-    animation: faded;
-    animation-duration: 3s;
-
- 
-    
+}
+.content-2 {
+  background-color: black;
+  border-radius: 50px;
+  padding: 50px;
+  box-shadow: 5px 2px 4px rgb(32, 32, 32);
+  animation: faded;
+  animation-duration: 3s;
 }
 @keyframes faded {
-    from{
-        opacity: 0.1;
-    }
-    to{
-        opacity: 1;
-
-    }
-    
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.content-3{
-
-    background-color: black;
-    grid-column: 1/4;
-    height: 200px;
-    border-radius: 50px;
-    padding: 50px;
-    text-align: center;
-    animation: faded;
-    animation-duration: 3s;
-
- 
-    
+.content-3 {
+  background-color: black;
+  grid-column: 1/4;
+  height: 200px;
+  border-radius: 50px;
+  padding: 50px;
+  text-align: center;
+  animation: faded;
+  animation-duration: 3s;
 }
-.content-5{
-   
-    background-color: black;
-    border-radius: 50px;
-  
-    padding: 50px;
-    box-shadow: 5px 2px 4px rgb(32, 32, 32);
-     animation: faded;
-    animation-duration: 3s;
- 
-    
+.content-5 {
+  background-color: black;
+  border-radius: 50px;
+
+  padding: 50px;
+  box-shadow: 5px 2px 4px rgb(32, 32, 32);
+  animation: faded;
+  animation-duration: 3s;
 }
-.content-1{
+.content-1 {
+  text-align: center;
 
-    
-        text-align: center;
-       
+  width: 100%;
+  box-sizing: border-box;
 
-        width: 100%;
-        box-sizing: border-box;
-        
-        overflow-y: auto; 
-        overflow-x: hidden;
-         scroll-behavior: smooth;
-         
-         
-   
-
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.content-3{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* จัดเป็นกริดอัตโนมัติ */
-    gap: 10px; /* เว้นช่องระหว่างรูป */
-    justify-items: center; /* จัดรูปให้อยู่กลาง */
-    align-items: center;
-    row-gap: 40px;
-    padding-left: 20px;
-     box-shadow: 5px 2px 4px rgb(32, 32, 32);
-     overflow: hidden;
-     height: 400px;
-     
-   
-    
-
+.content-3 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 10px; /* เว้นช่องระหว่างรูป */
+  justify-items: center; /* จัดรูปให้อยู่กลาง */
+  align-items: center;
+  row-gap: 40px;
+  padding-left: 20px;
+  box-shadow: 5px 2px 4px rgb(32, 32, 32);
+  overflow: hidden;
+  height: 400px;
 }
 
-.content-3 img{
+.content-3 img {
   width: 100%;
   height: 100%;
-  
   object-fit: cover; /* ครอบเต็มช่อง แต่ไม่ล้น */
   border-radius: 50px;
   box-shadow: 2px 6px 6px whitesmoke;
   display: block;
   border-radius: 200px;
-
 }
-
-
-
-
-
 
 .bookinghotel {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* จัดเป็นกริดอัตโนมัติ */
-    gap: 50px; /* เว้นช่องระหว่างรูป */
-    justify-items: center; /* จัดรูปให้อยู่กลาง */
-    align-items: center;
-    row-gap: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 50px; /* เว้นช่องระหว่างรูป */
+  justify-items: center; /* จัดรูปให้อยู่กลาง */
+  align-items: center;
+  row-gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 
 .bookinghotel img {
   width: 100%;
@@ -244,95 +191,71 @@ a:hover{
   display: block;
 }
 /* ? scorbardesigned */
-/* ตัว container ที่อยากตกแต่ง เช่น .content-1 */
 .content-1::-webkit-scrollbar {
-    
-  height: 10px;        /* ความหนาแนวนอน */
-  width: 10px; 
-  
-          /* ความหนาแนวตั้ง */
-  
+  height: 10px; /* ความหนาแนวนอน */
+  width: 10px;
 }
 
-
-
 .content-1::-webkit-scrollbar-track {
-  background: #222;     /* พื้นหลังรางเลื่อน */
+  background: #222; /* พื้นหลังรางเลื่อน */
   border-radius: 50px;
 }
 
 .content-1::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 0));
-  border-radius: 50px;  /* ทำให้กลม */
+  border-radius: 50px; /* ทำให้กลม */
 }
 
 .content-1::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 3, 3));
 }
 
-
-
-
-
-
-
 .bookinghotel-1:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
-
 
 .bookinghotel-2:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
-
-
 
 .bookinghotel-3:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
-
 
 .bookinghotel-4:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
 
-
 .bookinghotel-5:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
 
 .bookinghotel-6:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
-
 
 .bookinghotel-7:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
-
-
-
 
 .bookinghotel-8:hover img {
-    box-shadow: 2px 6px 6px red;
+  box-shadow: 2px 6px 6px red;
 }
 
-
-.logo1, .logo2, .logo3 {
+.logo1,
+.logo2,
+.logo3 {
   display: inline-block;
   margin-right: 30px; /* ระยะห่างระหว่างโลโก้ */
 }
 
-
-.room:hover img{ 
-     box-shadow: 2px 6px 6px red;
+.room:hover img {
+  box-shadow: 2px 6px 6px red;
 }
 
-.menubar{
-    display: none;
+.menubar {
+  display: none;
 }
-
-
 
 /* !responsive design */
 /* ?Taplet */
@@ -343,196 +266,122 @@ a:hover{
 
   .menu {
     display: none; /* ซ่อนเมนูตอนแรก */
-    max-height: auto; 
-    
+    max-height: auto;
   }
 
   /* เมื่อ active แล้วจะโชว์เมนูแบบ column */
-    .menu.active {
-        max-height: auto;   /* ความสูงของเมนูที่เปิด */
-            /* ขยับลงมานิดนึง */
-           
-          
-    }
- 
-
-  
+  .menu.active {
+    max-height: auto; /* ความสูงของเมนูที่เปิด */
+   
+  }
 
   .menu ul {
     flex-direction: column;
     gap: 10px;
-  
-    
   }
-  .content-1{
-
+  .content-1 {
     grid-column: 1/6;
     background-color: rgb(255, 255, 255);
     color: black;
     height: 500px;
-
     border-bottom-left-radius: 50px;
-    border-top-left-radius:50px ;
-    /* border-radius: 50px; */
+    border-top-left-radius: 50px;
     padding: 10px;
-     animation: faded;
+    animation: faded;
     animation-duration: 3s;
-    z-index: 1;
    
- 
-    
+  }
+
+  .content-2 {
+    grid-column: 1/6;
+  }
+
+  .content-3 {
+    grid-column: 1/6;
+    height: 600px;
+  }
+
+  .content-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-5 {
+    grid-column: 1/6;
+  }
 }
-
-.content-2{
-   grid-column: 1/6;
-}
-
-.content-3{
-   grid-column: 1/6;
-  
-  height: 600px;
-}
-
-.content-3{
- display: flex;
- flex-direction: column;
- 
-
-}
-.content-5{
-  grid-column: 1/6;
-}
-
-
-
-
- 
- 
-}
-
-
-
 
 /* ?  Laptop  */
 
 @media screen and (max-width: 1024px) {
-
-  .content-1{
-
+  .content-1 {
     grid-column: 1/6;
     background-color: rgb(255, 255, 255);
     color: black;
     height: 500px;
-
     border-bottom-left-radius: 50px;
-    border-top-left-radius:50px ;
-    /* border-radius: 50px; */
+    border-top-left-radius: 50px;
     padding: 10px;
-     animation: faded;
+    animation: faded;
     animation-duration: 3s;
-
     margin-top: 100px;
-    z-index: 1;
-   
- 
-    
+  }
+
+  .content-2 {
+    grid-column: 1/6;
+  }
+
+  .content-3 {
+    grid-column: 1/6;
+
+    height: 600px;
+  }
+
+  .content-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-5 {
+    grid-column: 1/6;
+  }
 }
-
-.content-2{
-   grid-column: 1/6;
-}
-
-.content-3{
-   grid-column: 1/6;
-  
-  height: 600px;
-}
-
-.content-3{
- display: flex;
- flex-direction: column;
- 
-
-}
-.content-5{
-  grid-column: 1/6;
-}
-
- 
- 
-}
-
-
-
-
 
 /* ? Laptop -  L */
 @media screen and (max-width: 1440px) {
-
-  .content-1{
-
+  .content-1 {
     grid-column: 1/6;
     background-color: rgb(255, 255, 255);
     color: black;
     height: 500px;
 
     border-bottom-left-radius: 50px;
-    border-top-left-radius:50px ;
-    /* border-radius: 50px; */
+    border-top-left-radius: 50px;
     padding: 10px;
-     animation: faded;
+    animation: faded;
     animation-duration: 3s;
-
     margin-top: 0px;
-    z-index: 1;
-   
- 
-    
-}
+  }
 
-.content-2{
-   grid-column: 1/6;
-}
+  .content-2 {
+    grid-column: 1/6;
+  }
 
-.content-3{
-   grid-column: 1/6;
-  
-  height: 600px;
-}
+  .content-3 {
+    grid-column: 1/6;
 
-.content-3{
- display: flex;
- flex-direction: column;
- 
+    height: 600px;
+  }
 
+  .content-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-5 {
+    grid-column: 1/6;
+  }
 }
-.content-5{
-  grid-column: 1/6;
-}
-
- 
- 
-}
-
 
 @media screen and (max-width: 1701px) {
-  .content-5 > .logo{
-    
-      display: flex;
-
- 
+  .content-5 > .logo {
+    display: flex;
   }
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-

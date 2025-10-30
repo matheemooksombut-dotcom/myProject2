@@ -1,69 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech&display=swap');
-body{
-     padding-top: 80px; 
-    max-width: 100%;
-    background-color: rgb(255, 255, 255);
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech&display=swap");
+body {
+  padding-top: 80px;
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
 }
-.navbar ul{
-    display: flex;
-    position: fixed;
-    flex-direction: row;
-    top: 0;
-    left: 0;
-    width: 100%;
-   
-    gap: 50px;
-    background-color: black;
-    color: aliceblue;
-    justify-content: space-around;
-    padding: 20px;
-    /* border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px; */
-   
+.navbar ul {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-    font-family: "SUSE Mono", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 10px;
-    font-style: normal;
-    box-shadow: 5px 2px 4px rgb(32, 32, 32);
-     z-index: 1000; 
-    
-    
-
+  gap: 50px;
+  background-color: black;
+  color: aliceblue;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  box-shadow: 5px 2px 4px rgb(32, 32, 32);
+  z-index: 1000;
 }
 
-ul{
-    list-style: none;
-    margin: 0;
-    
+ul {
+  list-style: none;
+  margin: 0;
 }
-
-
-
-
 
 .menu a:hover {
   color: red;
 }
 
-
 .navbar a:hover {
-  color: red ;
+  color: red;
 }
 
-
-
-.menubar{
-    display: none;
+.menubar {
+  display: none;
 }
-ul{
-    list-style: none;
-    margin: 0;
-    
+ul {
+  list-style: none;
+  margin: 0;
 }
 
-
-.menubar{
+.menubar {
   display: none;
   cursor: pointer;
   font-size: 22px;
@@ -72,28 +55,21 @@ ul{
   margin-left: 50px;
 }
 
-
 .menu {
   overflow: hidden;
-  max-height: 0;           /* ซ่อนไว้ก่อน */
-
-  
- 
+  max-height: 0; /* ซ่อนไว้ก่อน */
 }
 .menu ul {
   list-style: none;
   display: flex;
   gap: 20px;
   padding: 30px;
-  
 }
 .menu a {
   color: white;
   text-decoration: none;
   padding: 10px 0;
-  
 }
-
 
 /* !responsive design */
 @media screen and (max-width: 992px) {
@@ -103,25 +79,15 @@ ul{
 
   .menu {
     display: none; /* ซ่อนเมนูตอนแรก */
-    
   }
 
   /* เมื่อ active แล้วจะโชว์เมนูแบบ column */
-    .menu.active {
-        max-height: 300px;   /* ความสูงของเมนูที่เปิด */
-            /* ขยับลงมานิดนึง */
-        
-    }
+  .menu.active {
+    max-height: 300px; /* ความสูงของเมนูที่เปิด */
+  }
 
   .menu ul {
     flex-direction: column;
     gap: 10px;
-  
-    
   }
-
-
- 
- 
 }
-
